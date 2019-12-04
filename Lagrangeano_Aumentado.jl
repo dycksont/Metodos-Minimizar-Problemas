@@ -1,7 +1,6 @@
 using LinearAlgebra
 using NLPModels
 
-
 function cauchy_grad(nlp :: AbstractNLPModel; tol = 1e-6, kmax = 10000, max_time = 30.0, m = 1e-4)
 
     f(x) = obj(nlp, x)
